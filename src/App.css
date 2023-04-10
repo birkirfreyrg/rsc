@@ -5,6 +5,15 @@
   position: relative;
 }
 
+
+.ResultBox, .SummaryBox {
+  display: inline-block;
+  width: 50%;
+}
+
+.SummaryBox {
+}
+
 .App {
   display: flex;
   justify-content: center;
@@ -18,29 +27,20 @@
   align-items: center;
   width: 50%;
   height: 100%;
-
-  position: absolute; /* Set the top div to an absolute position */
-  top: 50%; /* Position the top div in the center vertically */
-  left: 25%; /* Position the top div in the center horizontally */
-  transform: translate(-50%, -50%); /* Center the top div relative to its container */
-  z-index: 1; /* Set the top div to a higher z-index than the bottom div */
   
   border-radius: 25px;
   background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
 .Summary-box {
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 277.5px;
   height: 100%;
-
-  position: absolute; /* Set the top div to an absolute position */
-  top: 50%; /* Position the top div in the center vertically */
-  left: 70%; /* Position the top div in the center horizontally */
-  transform: translate(-50%, -50%); /* Center the top div relative to its container */
-
-  border-top-right-radius: 25px; /* Set a 20px radius for the top right corner */
-  border-bottom-right-radius: 25px; /* Set a 20px radius for the top right corner */
-  background-color: purple;
+  
+  border-radius: 25px;
+  background-color: white;
 }
 
 .Your-result-header {
@@ -93,4 +93,7 @@
   text-align: center;
   margin-left: 45px;
   margin-right: 45px;
+}
+
+.Summary-header {
 }
