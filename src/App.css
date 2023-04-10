@@ -45,6 +45,10 @@
 
 .Your-result-header {
   margin-top: 30px;
+  color: hsl(241, 100%, 89%);
+  font-weight: bold;
+  font-size: 18px;
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .Result-value {
@@ -59,7 +63,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 25px;
   height: 150px;
   width: 150px;
   border-radius: 100%;
@@ -67,13 +71,26 @@
 }
 
 .Result-total-value {
-  font-size: 12px;
+  margin-top: -5px;
+  font-size: 13px;
+  color: hsla(241, 100%, 89%, 0.5);
+  font-weight: bold;
 }
 
 .Great-text {
   font-size: 24px;
+  margin-top: 22px;
+  color:hsl(0, 0%, 100%);
+  font-weight: bold;
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .Your-score-text {
-
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 13px;
+  margin-top: 10px;
+  color:hsla(241, 100%, 89%, 1);
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 45px;
 }
