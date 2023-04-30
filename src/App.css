@@ -96,4 +96,57 @@
 }
 
 .Summary-header {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  align-self: flex-start;
+}
+
+.Summary-result-container1, .Summary-result-container2, .Summary-result-container3, .Summary-result-container4 {
+  display: flex;
+  height: 50px;
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 10%;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.Summary-result-container1 {
+  background-color: hsla(0, 100%, 67%, .1);
+}
+
+.Summary-result-container2 {
+  background-color: hsla(39, 100%, 56%, .1);
+}
+
+.Summary-result-container3 {
+  background-color: hsla(166, 100%, 37%, .1);
+}
+
+.Summary-result-container4 {
+  background-color: hsla(234, 85%, 45%, .1);
+  
+}
+
+.Summary-button-container {
+
+}
+
+.Summary-button {
+  
+}
+
+.Icon-image {
+  margin-left: 5px;
+  margin-right: 5px;
+  float: left;
+}
+
+.Reaction-text {
+
 }
