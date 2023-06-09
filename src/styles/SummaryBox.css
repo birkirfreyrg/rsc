@@ -1,0 +1,143 @@
+.ResultBox,
+.SummaryBox {
+  display: inline-block;
+  width: 50%;
+}
+  
+  .SummaryBox {
+  }
+
+  
+  .Summary-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 277.5px;
+    height: 100%;
+    border-radius: 25px;
+    background-color: white;
+  }
+  
+  
+  .Summary-header {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    align-self: flex-start;
+  }
+
+ .Summary-result-container-reaction,
+.Summary-result-container-memory,
+.Summary-result-container-verbal,
+.Summary-result-container-visual {
+  display: flex;
+  overflow: auto;
+  height: 40px;
+  width: 80%;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-radius: 10%;
+  white-space: nowrap;
+  align-items: center;
+}
+
+  .Summary-result-container-reaction {
+    background-color: hsla(0, 100%, 67%, .1);
+  }
+  
+  .Summary-result-container-memory {
+    background-color: hsla(39, 100%, 56%, .1);
+  }
+  
+  .Summary-result-container-verbal {
+    background-color: hsla(166, 100%, 37%, .1);
+  }
+  
+  .Summary-result-container-visual {
+    background-color: hsla(234, 85%, 45%, .1);
+    
+  }
+  
+  .Summary-button-container {
+  
+  }
+  
+  .Summary-button {
+    
+  }
+
+  .Reaction-text,
+  .Memory-text,
+  .Verbal-text,
+  .Visual-text {
+    font-size: 13px;
+    margin-left: 8px;
+    font-weight: bold;
+  }
+
+  .Reaction-text {
+    color: hsl(0, 100%, 67%);
+  }
+
+  .Memory-text {
+    color: hsl(39, 100%, 56%);
+  }
+
+  .Verbal-text {
+    color: hsl(166, 100%, 37%);
+  }
+
+  .Visual-text {
+    color: hsl(234, 85%, 45%);
+  }
+
+  .Icon-image {
+    margin-left: 5px;
+    float: left;
+  }
+
+  .Reaction-score-recieved,
+  .Memory-score-recieved,
+  .Verbal-score-recieved,
+  .Visual-score-recieved {
+    float: right;
+    text-align: right;
+  }
+
+
+  .Score-recieved {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+
+  .Reaction-score-recieved {
+
+  }
+
+  .Memory-score-recieved {
+
+  }
+
+  .Verbal-score-recieved {
+
+  }
+
+  .Visual-score-recieved {
+  
+  }
+
+  .score-recieved-container {
+    width: 100%;
+    text-align: right;
+  }
+  
+  .score-total {
+    font-size: 13px;
+    font-weight: 400;
+    color: gray;
+    margin-right: 7px;
+  }
