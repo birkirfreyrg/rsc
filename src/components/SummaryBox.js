@@ -8,6 +8,12 @@ import VisualIcon from "../images/icon-visual.svg"
 import Button from "./Button";
 
 function SummaryBox() {
+
+    const handleButtonClick = () => {
+        // Handle the button click event
+        console.log('Button clicked!');
+      };
+
     return (
       <div className='Summary-component '>
         <div className='Summary-box'>
@@ -33,7 +39,8 @@ function SummaryBox() {
             <div className="score-recieved-container"><p className="Visual-score-recieved score-total"> &nbsp; / 100</p><p className="Visual-score-recieved Score-recieved">72</p></div>
           </div>
   
-          <Button />
+          <Button text="Continue" onClick={handleButtonClick}>
+          </Button>
         </div>
       </div>
     );

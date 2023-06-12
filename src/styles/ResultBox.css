@@ -12,6 +12,7 @@
     
     border-radius: 25px;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    z-index: 1;
   }
 
   .Your-result-header {

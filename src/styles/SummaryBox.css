@@ -3,19 +3,23 @@
   display: inline-block;
   width: 50%;
 }
-  
-  .SummaryBox {
-  }
 
   
   .Summary-box {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 277.5px;
+    align-items: end;
+    width: 100%;
     height: 100%;
-    border-radius: 25px;
     background-color: white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    top: 0;
+    right: 0px;
+    
   }
   
   
@@ -24,9 +28,10 @@
     font-weight: normal;
     font-size: 18px;
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 12.5px;
     margin-left: 30px;
-    align-self: flex-start;
+    align-self: flex-end;
+    margin-right: 170px;
   }
 
  .Summary-result-container-reaction,
@@ -34,12 +39,14 @@
 .Summary-result-container-verbal,
 .Summary-result-container-visual {
   display: flex;
+
   overflow: auto;
-  height: 40px;
-  width: 80%;
+  height: 45px;
+  width: 40%;
   margin-top: 6px;
   margin-bottom: 6px;
-  border-radius: 10%;
+  margin-right: 30px;
+  border-radius: 8px;
   white-space: nowrap;
   align-items: center;
 }
