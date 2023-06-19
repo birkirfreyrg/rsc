@@ -9,7 +9,6 @@
     align-items: center;
     width: 50%;
     height: 100%;
-    
     border-radius: 25px;
     background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     z-index: 1;
@@ -65,4 +64,30 @@
     text-align: center;
     margin-left: 45px;
     margin-right: 45px;
+  }
+
+  @media (max-width: 767px) {
+    /* CSS styles for mobile devices */
+  
+    /* Example CSS rules for ResultBox */
+    .Result-box {
+      height: auto;
+      width: 100%;
+      float: left; /* Add this property to allow wrapping */
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 25px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 25px;
+    }
+
+    .Your-score-text {
+      margin-bottom: 30px;
+    }
+    .Result-circle {
+      height: 120px;
+      width: 120px;
+    }
+    .Your-result-header {
+      margin-top: 15px;
+    }
   }

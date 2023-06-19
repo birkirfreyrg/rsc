@@ -12,3 +12,18 @@
   height: 100vh;
   background-color: #eff1fd;
 }
+
+@media (max-width: 767px) {
+  /* CSS styles for mobile devices */
+
+  /* Example CSS rules for Box-container in app.css */
+  .Box-container {
+    height: 100%;
+    display:unset;
+    flex-wrap: wrap; /* Add this property to enable wrapping */
+  }
+
+  .App {
+    height: 100%;
+  }
+}

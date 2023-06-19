@@ -9,7 +9,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -39,16 +39,15 @@
 .Summary-result-container-verbal,
 .Summary-result-container-visual {
   display: flex;
-
+  align-items: center;
   overflow: auto;
   height: 45px;
   width: 40%;
   margin-top: 6px;
   margin-bottom: 6px;
-  margin-right: 30px;
   border-radius: 8px;
+  margin-right: 30px;
   white-space: nowrap;
-  align-items: center;
 }
 
   .Summary-result-container-reaction {
@@ -147,4 +146,37 @@
     font-weight: 400;
     color: gray;
     margin-right: 7px;
+  }
+
+  @media (max-width: 767px) {
+    /* CSS styles for mobile devices */
+  
+    /* Example CSS rules for SummaryBox */
+    .Summary-box {
+      display: flex;
+      align-items: center;
+      height: auto;
+      position: relative; /* Change to relative positioning */
+      width: 100%;
+    }
+    .Summary-result-container-reaction,
+    .Summary-result-container-memory,
+    .Summary-result-container-verbal,
+    .Summary-result-container-visual {
+      width: 85%;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      border-radius: 8px;
+      white-space: nowrap;
+      margin-right: unset;
+      align-items: center;
+    }
+    .Summary-header {
+      font-size: 16px;
+      margin-top: 18px;
+      margin-bottom: 12px;
+      margin-left: 30px;
+      margin-right: unset;
+      align-self: start;
+    }
   }

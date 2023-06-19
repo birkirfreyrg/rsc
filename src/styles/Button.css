@@ -1,5 +1,5 @@
 .Button {
-    height: 45px;
+    height: 42.5px;
     width: 40%;
     border-radius: 18px;
     border: none;
@@ -9,3 +9,14 @@
     margin-right: 30px;
     font-weight: bold;
 }
+
+@media (max-width: 767px) {
+    /* CSS styles for mobile devices */
+    .Button {
+        width: 88%;
+        font-size: 15px;
+        margin-right: unset;
+        margin-bottom: 20px;
+        margin-top: 14px;
+    }
+  }

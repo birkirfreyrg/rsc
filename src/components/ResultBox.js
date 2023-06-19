@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/ResultBox.css"
 
+
 function ResultBox() {
     return (
           <div className='Result-box'>
