@@ -1,22 +1,21 @@
 .Button {
-    height: 42.5px;
-    width: 40%;
-    border-radius: 18px;
-    border: none;
-    color: white;
-    margin-top: 15px;
-    background-color: hsl(224, 30%, 27%);
-    margin-right: 30px;
-    font-weight: bold;
+  height: 42.5px;
+  width: 40%;
+  border-radius: 18px;
+  border: none;
+  color: white;
+  margin-top: 15px;
+  background-color: hsl(224, 30%, 27%);
+  margin-right: 30px;
+  font-weight: bold;
 }
 
 @media (max-width: 767px) {
-    /* CSS styles for mobile devices */
-    .Button {
-        width: 88%;
-        font-size: 15px;
-        margin-right: unset;
-        margin-bottom: 20px;
-        margin-top: 14px;
-    }
+  .Button {
+    width: 88%;
+    font-size: 15px;
+    margin-right: unset;
+    margin-bottom: 20px;
+    margin-top: 14px;
   }
+}

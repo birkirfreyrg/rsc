@@ -4,37 +4,34 @@
   width: 50%;
 }
 
-  
-  .Summary-box {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    top: 0;
-    right: 0px;
-    
-  }
-  
-  
-  .Summary-header {
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: normal;
-    font-size: 18px;
-    margin-top: 30px;
-    margin-bottom: 12.5px;
-    margin-left: 30px;
-    align-self: flex-end;
-    margin-right: 170px;
-  }
+.Summary-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  top: 0;
+  right: 0px;
+}
 
- .Summary-result-container-reaction,
+.Summary-header {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 12.5px;
+  margin-left: 30px;
+  align-self: flex-end;
+  margin-right: 170px;
+}
+
+.Summary-result-container-reaction,
 .Summary-result-container-memory,
 .Summary-result-container-verbal,
 .Summary-result-container-visual {
@@ -50,133 +47,103 @@
   white-space: nowrap;
 }
 
-  .Summary-result-container-reaction {
-    background-color: hsla(0, 100%, 67%, .1);
-  }
-  
-  .Summary-result-container-memory {
-    background-color: hsla(39, 100%, 56%, .1);
-  }
-  
-  .Summary-result-container-verbal {
-    background-color: hsla(166, 100%, 37%, .1);
-  }
-  
-  .Summary-result-container-visual {
-    background-color: hsla(234, 85%, 45%, .1);
-    
-  }
-  
-  .Summary-button-container {
-  
-  }
-  
-  .Summary-button {
-    
-  }
+.Summary-result-container-reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
 
-  .Reaction-text,
-  .Memory-text,
-  .Verbal-text,
-  .Visual-text {
-    font-size: 13px;
-    margin-left: 8px;
-    font-weight: bold;
-  }
+.Summary-result-container-memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
 
-  .Reaction-text {
-    color: hsl(0, 100%, 67%);
-  }
+.Summary-result-container-verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
 
-  .Memory-text {
-    color: hsl(39, 100%, 56%);
-  }
+.Summary-result-container-visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
 
-  .Verbal-text {
-    color: hsl(166, 100%, 37%);
-  }
+.Reaction-text,
+.Memory-text,
+.Verbal-text,
+.Visual-text {
+  font-size: 13px;
+  margin-left: 8px;
+  font-weight: bold;
+}
 
-  .Visual-text {
-    color: hsl(234, 85%, 45%);
-  }
+.Reaction-text {
+  color: hsl(0, 100%, 67%);
+}
 
-  .Icon-image {
-    margin-left: 5px;
-    float: left;
-  }
+.Memory-text {
+  color: hsl(39, 100%, 56%);
+}
 
-  .Reaction-score-recieved,
-  .Memory-score-recieved,
-  .Verbal-score-recieved,
-  .Visual-score-recieved {
-    float: right;
-    text-align: right;
-  }
+.Verbal-text {
+  color: hsl(166, 100%, 37%);
+}
 
+.Visual-text {
+  color: hsl(234, 85%, 45%);
+}
 
-  .Score-recieved {
-    font-size: 13px;
-    font-weight: bold;
-  }
+.Icon-image {
+  margin-left: 5px;
+  float: left;
+}
 
+.Reaction-score-recieved,
+.Memory-score-recieved,
+.Verbal-score-recieved,
+.Visual-score-recieved {
+  float: right;
+  text-align: right;
+}
 
-  .Reaction-score-recieved {
+.Score-recieved {
+  font-size: 13px;
+  font-weight: bold;
+}
 
-  }
+.score-recieved-container {
+  width: 100%;
+  text-align: right;
+}
 
-  .Memory-score-recieved {
+.score-total {
+  font-size: 13px;
+  font-weight: 400;
+  color: gray;
+  margin-right: 7px;
+}
 
-  }
-
-  .Verbal-score-recieved {
-
-  }
-
-  .Visual-score-recieved {
-  
-  }
-
-  .score-recieved-container {
+@media (max-width: 767px) {
+  .Summary-box {
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: relative;
     width: 100%;
-    text-align: right;
   }
-  
-  .score-total {
-    font-size: 13px;
-    font-weight: 400;
-    color: gray;
-    margin-right: 7px;
+  .Summary-result-container-reaction,
+  .Summary-result-container-memory,
+  .Summary-result-container-verbal,
+  .Summary-result-container-visual {
+    width: 85%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    white-space: nowrap;
+    margin-right: unset;
+    align-items: center;
   }
-
-  @media (max-width: 767px) {
-    /* CSS styles for mobile devices */
-  
-    /* Example CSS rules for SummaryBox */
-    .Summary-box {
-      display: flex;
-      align-items: center;
-      height: auto;
-      position: relative; /* Change to relative positioning */
-      width: 100%;
-    }
-    .Summary-result-container-reaction,
-    .Summary-result-container-memory,
-    .Summary-result-container-verbal,
-    .Summary-result-container-visual {
-      width: 85%;
-      margin-top: 6px;
-      margin-bottom: 6px;
-      border-radius: 8px;
-      white-space: nowrap;
-      margin-right: unset;
-      align-items: center;
-    }
-    .Summary-header {
-      font-size: 16px;
-      margin-top: 18px;
-      margin-bottom: 12px;
-      margin-left: 30px;
-      margin-right: unset;
-      align-self: start;
-    }
+  .Summary-header {
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    margin-left: 30px;
+    margin-right: unset;
+    align-self: start;
   }
+}
