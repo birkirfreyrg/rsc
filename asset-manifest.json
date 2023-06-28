@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rsc/static/css/main.da08d2c1.css",
+    "main.js": "/rsc/static/js/main.9c4f430e.js",
+    "index.html": "/rsc/index.html",
+    "main.da08d2c1.css.map": "/rsc/static/css/main.da08d2c1.css.map",
+    "main.9c4f430e.js.map": "/rsc/static/js/main.9c4f430e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da08d2c1.css",
+    "static/js/main.9c4f430e.js"
+  ]
+}
