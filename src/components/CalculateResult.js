@@ -31,7 +31,13 @@ function CalculateResult() {
       : null;
 
   return (
-    <div>{result !== null ? <p>{parseInt(result)}</p> : <p>Loading...</p>}</div>
+    <>
+      {result !== null ? (
+        <p className="Result-value">{parseInt(result)}</p>
+      ) : (
+        <p>Loading...</p>
+      )}
+    </>
   );
 }
 

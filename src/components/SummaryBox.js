@@ -1,9 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../styles/SummaryBox.css";
-import ReactionIcon from "../images/icon-reaction.svg";
-import MemoryIcon from "../images/icon-memory.svg";
-import VerbalIcon from "../images/icon-verbal.svg";
-import VisualIcon from "../images/icon-visual.svg";
 import Button from "./Button";
 
 function SummaryBox() {
@@ -35,7 +31,15 @@ function SummaryBox() {
       <div className="Summary-box">
         <div className="Summary-header">Summary</div>
         <div className="Summary-result-container-reaction">
-          <img alt="Reaction Icon" src={ReactionIcon} className="Icon-image" />
+          {reaction ? (
+            <img
+              alt="Reaction Icon"
+              src={reaction.icon}
+              className="Icon-image"
+            />
+          ) : (
+            <p className="Icon-image">Loading...</p>
+          )}
 
           {reaction ? (
             <p className="Reaction-text">{reaction.category}</p>
@@ -57,9 +61,12 @@ function SummaryBox() {
             )}
           </div>
         </div>
-
         <div className="Summary-result-container-memory">
-          <img alt="Memory Icon" src={MemoryIcon} className="Icon-image" />
+          {memory ? (
+            <img alt="Memory Icon" src={memory.icon} className="Icon-image" />
+          ) : (
+            <p className="Icon-image">Loading...</p>
+          )}
 
           {memory ? (
             <p className="Memory-text">{memory.category}</p>
@@ -80,7 +87,11 @@ function SummaryBox() {
         </div>
 
         <div className="Summary-result-container-verbal">
-          <img alt="Verbal Icon" src={VerbalIcon} className="Icon-image" />
+          {verbal ? (
+            <img alt="Verbal Icon" src={verbal.icon} className="Icon-image" />
+          ) : (
+            <p className="Icon-image">Loading...</p>
+          )}
 
           {verbal ? (
             <p className="Verbal-text">{verbal.category}</p>
@@ -100,7 +111,11 @@ function SummaryBox() {
           </div>
         </div>
         <div className="Summary-result-container-visual">
-          <img alt="Visual Icon" src={VisualIcon} className="Icon-image" />
+          {visual ? (
+            <img alt="Visual Icon" src={visual.icon} className="Icon-image" />
+          ) : (
+            <p className="Icon-image">Loading...</p>
+          )}
 
           {visual ? (
             <p className="Visual-text">{visual.category}</p>
